@@ -1,0 +1,32 @@
+#article-page {
+    display: flex;
+    justify-content: center;
+}
+
+#blog-article {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#blog-article .blog-img {
+    max-width: 400px;
+}
+
+#blog-article img {
+    width: 100%;
+}
+
+#blog-article button {
+    background-color: var(--blue3);
+    color: #fff;
+}
+
+#blog-article button:hover {
+    background-color: var(--blue4);
+}
+
+@media (max-width: 477px) {
+    #blog-article .blog-img {
+        max-width: 95%;
+    }
+}

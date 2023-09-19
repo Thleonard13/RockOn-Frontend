@@ -1,0 +1,81 @@
+/* SHOP PAGE STYLING */
+
+.side-menu-btn {
+    position: fixed;
+    display: none;
+    background-color: var(--blue2);
+    color: var(--neutral1);
+    padding: 14px;
+    z-index: 2;
+    border-radius: 0 0 14px 0;
+}
+
+.side-menu-btn:hover {
+    transform: scale(1.1);
+    background-color: var(--blue3);
+}
+
+.side-menu-btn h4 {
+    margin-left: 5px;
+    color: var(--neutral1);
+}
+
+.filters{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.filters button{
+    margin: 5px 20px;
+    width: 170px;
+    white-space: nowrap;
+    border-radius: 50px;
+    font-size: 24px;
+    color: var(--neutral1);
+    background-color: var(--blue3);
+    border: none;
+    transition: 0.2s;
+}
+
+.filters button:hover{
+    background-color: var(--blue4);
+    transform: scale(1.1);
+}
+
+.active-filter{
+    background-color: var(--blue4);
+}
+
+.shop-body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+@media (max-width: 799px) {  
+    .side-menu-btn {
+        display: flex;
+    }
+    
+    .shop-body {
+        display: block;
+    }
+}
+
+@media (max-width: 499px) {
+    .filters{
+        width: 100vw;
+    }
+
+    .filters button{
+        padding: 5px;
+        margin: 5px;
+        width: 5vw;
+        font-size: 5vw;
+        white-space: initial;
+        min-width: 110px;
+    }
+}

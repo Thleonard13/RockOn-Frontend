@@ -1,0 +1,81 @@
+#pro-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pro-details .single-pro-image {
+    width: 25%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#pro-details .single-pro-details {
+    width: 40%;
+    padding-top: 30px;
+}
+
+#pro-details .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#pro-details .single-pro-details h2 {
+   font-size: 26px;
+}
+
+#pro-details .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+
+#pro-details .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#pro-details .single-pro-details input:focus {
+    outline: none;
+}
+
+#pro-details .single-pro-details button {
+    background-color: var(--blue3);
+    color: var(--neutral1);
+}
+
+#pro-details .single-pro-details button:hover {
+    background-color: var(--blue4);
+}
+
+#pro-details .single-pro-details p {
+    line-height: 25px;
+}
+
+@media (max-width: 477px) {
+    #pro-details {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #pro-details .single-pro-image {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #pro-details .single-pro-details {
+        width: 100%;
+    }
+}

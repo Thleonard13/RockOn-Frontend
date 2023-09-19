@@ -1,0 +1,150 @@
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('images/banner/b1.png');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: #fff;
+
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #ff0090;
+}
+
+#banner button:hover {
+    background-color: var(--blue2);
+    color: var(--neutral1);
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.banner-box{
+    padding: 20px;
+    transition: 200ms;
+}
+
+.banner-box:hover{
+    box-shadow: 0px 10px 30px rgba(21, 21, 21, 0.3);
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('images/banner/b21.png');
+    min-width: 580px;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    padding: 30px;
+}
+
+#sm-banner h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #237baa;
+    border: 1px solid #237baa;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url('images/banner/b22.png'); 
+}
+
+#banner3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('images/banner/b31.png');
+    width: 340px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 20px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url('images/banner/b32.png');
+}
+
+#banner3 .banner-box3 {
+    background-image: url('images/banner/b33.png');
+}
+
+#banner3 h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 .banner-box3 h2{
+    color: #333;
+}
+
+#banner3 h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+@media (max-width: 799px) {
+    #sm-banner .banner-box {
+       min-width: 100%;
+    }
+
+}
+
+@media (max-width: 477px) {
+    #sm-banner .banner-box {
+        height: 100px;
+    }    
+    
+     #banner3 .banner-box {
+         width: 100vw;
+         margin: 10px 0;
+    }
+
+}

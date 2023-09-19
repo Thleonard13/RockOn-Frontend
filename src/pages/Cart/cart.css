@@ -1,0 +1,137 @@
+#cart{
+    position: relative;
+    background-color: var(--neutral1);
+}
+
+#cart .cart-header{
+    display: grid;
+    grid-template-columns: 10% 65% 10% 100px 5%;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.item-container{ 
+    display: grid;
+    grid-template-columns: 10% 65% 10% 100px 5%;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.item-container:hover{
+    background-color: var(--neutral2);
+}
+
+.item-container input{
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+
+.quantity {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-right: 0 10px;
+}
+
+.quantity-btn {
+    font-size: 30px;
+    color: var(--neutral5);
+    background-color: #0000;
+    padding: 5px;
+    margin: 0 3px;
+    border-radius: 20px;
+}
+
+.item-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--neutral3);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.remove-btn{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    transition: 0.1s;
+}
+
+.remove-btn:focus{
+    background-color: red;
+}
+
+.buttons{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.cart-btn{
+    width: 240px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--blue3);
+    margin: 10px 20px;
+}
+
+.cart-btn:hover{
+    background-color: var(--blue4);
+}
+
+#cart .total{
+    padding: 10px 30px;
+    text-align: end;
+}
+
+@media (max-width: 799px) {
+
+    #cart .cart-header{
+        display: none;
+    }
+
+    .item-container{ 
+        display: grid;
+        position: relative;
+        grid-template-columns: 60px 40% 40%;
+        align-items: center;
+        padding: 20px 10px;
+        border-bottom: 1px solid #333;
+    }
+
+    .item-container .cart-item-img {
+        grid-row: span 3;
+    }
+
+    .remove-btn {
+        position: absolute;
+        top: 20px;
+        right: 2vw;
+    }
+    
+
+    .item-container h4 {
+        overflow: hidden;
+        grid-column: span 2;
+        padding-right: 40px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 477px) {
+    .item-container h4 {
+        font-size: 16px;
+    }
+}
