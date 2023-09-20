@@ -27,10 +27,7 @@ const Shop = () => {
       fetchData();
     }, []);
 
-    useEffect(() => {
-      console.log(isOpen)
-    }, [isOpen])
-
+  // shop page headers
     const headerText = "#stayhome";
     const subHeader = "Save more with coupons & up to 70% off!";
     const NewArrivals = {

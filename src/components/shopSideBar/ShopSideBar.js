@@ -80,7 +80,7 @@ const ShopSideBar = (props) => {
         return false;
       });
 
-      setFilteredResults(filteredRes.length > 0 ? filteredRes : null);
+      setFilteredResults(selectedPriceRanges.length > 0 ? filteredRes : null);
     }
   }, [minPrices, maxPrices, results]);
 
