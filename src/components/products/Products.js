@@ -4,8 +4,6 @@ import ProductCard from '../ProductCard'
 import './products.css'
 const Products = ({ title, results }) => {
 
-  console.log(results)
-
   return (
     <section id='product-section' > 
     {/* Renders error message if there are no products returned*/}
